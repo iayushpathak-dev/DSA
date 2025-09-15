@@ -14,7 +14,6 @@ const largestElementArray = (array = []) => {
     if (largestElement < value) {
       largestElement = value;
     }
-    i++;
   }
 
   console.log(largestElement, "largest element");
