@@ -20,4 +20,4 @@ const largestElementArray = (array = []) => {
   console.log(largestElement, "largest element");
 };
 
-largestElementArray();
+largestElementArray([1, 4, 5, 3, 6, 3, 2, 6, 12, 1, 5, 78, 0, 5]);
