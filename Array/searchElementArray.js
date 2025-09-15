@@ -1,10 +1,11 @@
 // write a function that search for an element in an array, return the index if element is in present, if element is not present return -1?
 
-function searchElementInArray(array, element) {
+function searchElementInArray(array = [], element) {
   const length = array.length;
 
   if (length === 0) {
     console.log("Array is empty!");
+    return;
   }
 
   for (let i = 0; i < length; i++) {

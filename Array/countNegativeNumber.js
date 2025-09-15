@@ -1,11 +1,12 @@
 // write a function that return the count of negative number in an array?
 
-const countNegativeNumber = (array) => {
+const countNegativeNumber = (array = []) => {
   const length = array.length;
   let count = 0;
 
   if (length === 0) {
     console.log("Array is empty!");
+    return;
   }
 
   for (let i = 0; i < length; i++) {
