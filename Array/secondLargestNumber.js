@@ -11,7 +11,7 @@ const secondLargestElement = (array = []) => {
     if (largestNumber < array[i]) {
       secondLargest = largestNumber;
       largestNumber = array[i];
-    } else if (secondLargest < array[i]) {
+    } else if (secondLargest < array[i] && largestNumber != array[i]) {
       secondLargest = array[i];
     }
   }
@@ -20,4 +20,4 @@ const secondLargestElement = (array = []) => {
   return secondLargest;
 };
 
-secondLargestElement([7, 3, 5]);
+secondLargestElement([10, 20, 20, 20, 40, 9, 11]);
