@@ -1,11 +1,11 @@
-function firstStarQuestion() {
-  for (let i = 0; i < 4; i++) {
+function firstStarQuestion(n) {
+  for (let i = 0; i < n; i++) {
     let row = "";
-    for (let j = 0; j < 4; j++) {
+    for (let j = 0; j < n; j++) {
       row = row + "*";
     }
     console.log(row);
   }
 }
 
-firstStarQuestion();
+firstStarQuestion(8);
